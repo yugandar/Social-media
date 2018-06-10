@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/toolbarcolor"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:hint="Login to your app"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:hint="username or Email"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="207dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="227dp"
+        android:background="@color/colorPrimary"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/ortext"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="197dp"
+        android:alpha="1"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="Or"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.751"
+        tools:ignore="MissingConstraints" />
+
+
+    <FrameLayout
+        android:id="@+id/fblayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="137dp"
+        android:layout_alignParentLeft="true">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/fb"
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="#416BC1"
+            android:text="FaceBook"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/goolayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="77dp"
+        android:layout_alignParentLeft="true">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/googlr_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/google_btn"
+            android:layout_width="332dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:background="#d34836"
+            android:text="Google"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/twitter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goolayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="77dp"
+        android:layout_alignParentLeft="true">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/twitter_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/twitter_bn"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/username"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="#1dcaff"
+        android:text="Twitter"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
