@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3f51b5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark">#505daf</color>
     <color name="colorAccent">#ff4081</color>
     <color name="toolbarcolor">#9a9fb9</color>
     <color name="address">#2F7092</color>
